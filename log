@@ -1,0 +1,51 @@
+[s6-init] making user provided files available at /var/run/s6/etc...exited 0.
+[s6-init] ensuring user provided files have correct perms...exited 0.
+[fix-attrs.d] applying ownership & permissions fixes...
+[fix-attrs.d] done.
+[cont-init.d] executing container initialization scripts...
+[cont-init.d] 00-banner.sh: executing... 
+-----------------------------------------------------------
+ Hass.io Add-on: AppDaemon3 v0.1.0
+ Python Apps and HADashboard using AppDaemon 3.x for Home Assistant
+ From: Community Hass.io Add-ons
+ By: Franck Nijhof <frenck@addons.community>
+-----------------------------------------------------------
+[cont-init.d] 00-banner.sh: exited 0.
+[cont-init.d] 01-log-level.sh: executing... 
+Log level is set to INFO
+[cont-init.d] 01-log-level.sh: exited 0.
+[cont-init.d] 02-updates.sh: executing... 
+INFO: You are running the latest version of this add-on
+[cont-init.d] 02-updates.sh: exited 0.
+[cont-init.d] 03-version-requirements.sh: executing... 
+INFO: Supervisor version requirements checks passed.
+[cont-init.d] 03-version-requirements.sh: exited 0.
+[cont-init.d] 20-init-configuration.sh: executing... 
+[cont-init.d] 20-init-configuration.sh: exited 0.
+[cont-init.d] 21-compiled-dir.sh: executing... 
+[cont-init.d] 21-compiled-dir.sh: exited 0.
+[cont-init.d] 50-compiled-symlink.sh: executing... 
+[cont-init.d] 50-compiled-symlink.sh: exited 0.
+[cont-init.d] 80-system-packages.sh: executing... 
+[cont-init.d] 80-system-packages.sh: exited 0.
+[cont-init.d] 81-python-packages.sh: executing... 
+[cont-init.d] 81-python-packages.sh: exited 0.
+[cont-init.d] done.
+[services.d] starting services
+starting version 3.2.4
+[services.d] done.
+2018-02-24 00:45:44.797593 INFO AppDaemon Version 3.0.0b2 starting
+2018-02-24 00:45:44.798328 INFO Configuration read from: /config/appdaemon/appdaemon.yaml
+2018-02-24 00:45:44.801135 INFO AppDaemon: Starting Apps
+2018-02-24 00:45:44.814454 INFO AppDaemon: Loading Plugin HASS using class HassPlugin from module hassplugin
+2018-02-24 00:45:45.139377 INFO AppDaemon: HASS: HASS Plugin Initializing
+2018-02-24 00:45:45.140685 INFO AppDaemon: HASS: HASS Plugin initialization complete
+2018-02-24 00:45:45.142215 INFO Starting Dashboards
+2018-02-24 00:45:45.164149 INFO Starting API
+2018-02-24 00:45:45.509833 INFO AppDaemon: HASS: Connected to Home Assistant 0.63.3
+2018-02-24 00:45:46.063559 INFO AppDaemon: Got initial state from namespace default
+2018-02-24 00:45:48.082139 INFO AppDaemon: Loading Module: /config/appdaemon/apps/hello.py
+2018-02-24 00:45:48.120408 INFO AppDaemon: Loading Object hello_world using class HelloWorld from module hello
+2018-02-24 00:45:48.450436 INFO hello_world: Hello from AppDaemon
+2018-02-24 00:45:48.457261 INFO hello_world: You are now ready to run Apps!
+2018-02-24 00:45:48.458926 INFO AppDaemon: App initialization complete
